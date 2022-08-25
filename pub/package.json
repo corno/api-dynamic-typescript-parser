@@ -1,0 +1,19 @@
+{
+  "name": "api-dynamic-typescript-parser",
+  "version": "0.0.0",
+  "description": "parses a typescript project into a dynamic AST",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "author": "Corno",
+  "license": "ISC",
+  "files": [
+    "dist",
+    "data"
+  ],
+  "dependencies": {
+    "api-untyped-ast": "^0.2.0",
+    "pareto-core-types": "^0.1.0"
+  },
+  "interface-fingerprint": "1ee095bddd1f9622027e06207917eaf7749968dd",
+  "content-fingerprint": "a3b0cc01dbcd4e56fde678a4501d510f84afcbfb"
+}
