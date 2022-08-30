@@ -25,5 +25,8 @@ export type Path = pt.Nested<string>
 export type Parse<NodeImplementationDetails> = (
     $: {
         tsconfigPath: Path
+    },
+    $i: {
+        callback: ($: Project<NodeImplementationDetails>) => void
     }
-) => Project<NodeImplementationDetails>
+) => pt.AsyncNonValue
