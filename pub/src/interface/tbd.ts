@@ -7,10 +7,6 @@ export type File<NodeImplementationDetails>  = {
     root: uast.TUntypedNode<NodeImplementationDetails>
 }
 
-export type Project<NodeImplementationDetails> = {
-    files: pt.Dictionary<File<NodeImplementationDetails>>
-}
-
 export type Location = {
     line: number
     column: number
@@ -27,6 +23,12 @@ export type Parse<NodeImplementationDetails> = (
         tsconfigPath: Path
     },
     $i: {
-        callback: ($: Project<NodeImplementationDetails>) => void
+        onFile: ($: {
+            path: string,
+            data: File<NodeImplementationDetails>
+        }) => void
+        onEnd: () => {
+
+        }
     }
 ) => pt.AsyncNonValue
