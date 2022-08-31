@@ -27,8 +27,6 @@ export type Parse<NodeImplementationDetails> = (
             path: string,
             data: File<NodeImplementationDetails>
         }) => void
-        onEnd: () => {
-
-        }
+        onEnd: () => void
     }
 ) => pt.AsyncNonValue
