@@ -2,9 +2,9 @@ import * as pt from "pareto-core-types"
 
 import * as uast from "api-untyped-ast"
 
-export type File<NodeImplementationDetails> = {
+export type File = {
     fullPath: string
-    root: uast.TUntypedNode<NodeImplementationDetails>
+    root: uast.TUntypedNode
 }
 
 export type Location = {
@@ -15,13 +15,9 @@ export type Location = {
 export type TypeScriptParserError =
     | ["tsconfg.json does not exist", {}]
 
-export type GetLocation<NodeImplementationDetails> = (
-    $: NodeImplementationDetails
-) => Location
-
 export type Path = pt.Nested<string>
 
-export type Parse<NodeImplementationDetails> = (
+export type Parse = (
     $: {
         tsconfigPath: Path
     },
@@ -29,7 +25,7 @@ export type Parse<NodeImplementationDetails> = (
         onError: ($: TypeScriptParserError) => void
         onFile: ($: {
             path: string,
-            data: File<NodeImplementationDetails>
+            data: File
         }) => void
         onEnd: () => void
     }
