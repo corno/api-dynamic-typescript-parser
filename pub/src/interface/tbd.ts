@@ -37,4 +37,5 @@ export type XParse = (
  * As this wrapper is agnostic about StringLiterals, it cannot do it, but it can provide a function that can be used by a consumer
  * 
  */
-export type FStripQuotes = ($: string) => string
+ export type FStripQuotesFromValue = ($: uast.TUntypedNode) => string
+ //export type FHasConstFlag = ($: uast.TUntypedNode) => boolean

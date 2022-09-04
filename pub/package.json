@@ -14,6 +14,6 @@
     "api-untyped-ast": "^0.3.0",
     "pareto-core-types": "^0.2.0"
   },
-  "interface-fingerprint": "569d48125d37825a7bfe33f1cf768529bd4f370a",
-  "content-fingerprint": "af876ee14c57d1d2ebe1f4db4b26cab29ccd7f8e"
+  "interface-fingerprint": "c65b789dd19a780bf7df045d1fa0a69b8a096728",
+  "content-fingerprint": "785efcb3cb3c4644a4a26a9474ca3f23b418885d"
 }
