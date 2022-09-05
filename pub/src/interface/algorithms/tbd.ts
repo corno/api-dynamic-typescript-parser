@@ -1,21 +1,5 @@
 import * as pt from "pareto-core-types"
-
-import * as uast from "api-untyped-ast"
-
-export type TFile = {
-    fullPath: string
-    root: uast.TUntypedNode
-}
-
-export type TLocation = {
-    line: number
-    column: number
-}
-
-export type TTypeScriptParserError =
-    | ["tsconfg.json does not exist", {}]
-
-export type TPath = pt.Nested<string>
+import { TFile, TPath, TTypeScriptParserError } from "../types/all"
 
 export type XParse = (
     $: {
