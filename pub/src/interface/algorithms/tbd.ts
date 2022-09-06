@@ -1,7 +1,7 @@
 import * as pt from "pareto-core-types"
 import { TFile, TPath, TTypeScriptParserError } from "../types/all"
 
-export type FParse = (
+export type PParse = (
     $: {
       readonly  "tsconfigPath": TPath
     },
@@ -12,8 +12,9 @@ export type FParse = (
             data: TFile
         }) => void
         onEnd: () => void
-    }
-) => pt.AsyncNonValue
+    },
+    $a: pt.ProcessAsyncValue
+) => void
 
 
 /**
