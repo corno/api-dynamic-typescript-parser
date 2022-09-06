@@ -3,15 +3,15 @@ import { TFile, TPath, TTypeScriptParserError } from "../types/all"
 
 export type PParse = (
     $: {
-      readonly  "tsconfigPath": TPath
+        readonly "tsconfigPath": TPath
     },
     $i: {
-        onError: ($: TTypeScriptParserError) => void
-        onFile: ($: {
-            path: string,
-            data: TFile
+        readonly "onError": ($: TTypeScriptParserError) => void
+        readonly "onFile": ($: {
+            readonly "path": string,
+            readonly "data": TFile
         }) => void
-        onEnd: () => void
+        readonly "onEnd": () => void
     },
     $a: pt.ProcessAsyncValue
 ) => void
@@ -22,5 +22,5 @@ export type PParse = (
  * As this wrapper is agnostic about StringLiterals, it cannot do it, but it can provide a function that can be used by a consumer
  * 
  */
- export type FStripQuotes = ($: string) => string
+export type FStripQuotes = ($: string) => string
  //export type FHasConstFlag = ($: uast.TUntypedNode) => boolean
