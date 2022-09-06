@@ -1,9 +1,9 @@
 import * as pt from "pareto-core-types"
 import { TFile, TPath, TTypeScriptParserError } from "../types/all"
 
-export type XParse = (
+export type FParse = (
     $: {
-        tsconfigPath: TPath
+      readonly  "tsconfigPath": TPath
     },
     $i: {
         onError: ($: TTypeScriptParserError) => void
