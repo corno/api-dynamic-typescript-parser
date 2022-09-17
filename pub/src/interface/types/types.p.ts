@@ -13,6 +13,6 @@ export type TLocation = {
 }
 
 export type TTypeScriptParserError =
-    | ["tsconfg.json does not exist", {}]
+    | ["tsconfg.json does not exist", null]
 
 export type TPath = pt.Nested<string>
