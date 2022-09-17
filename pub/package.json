@@ -11,9 +11,9 @@
     "data"
   ],
   "dependencies": {
-    "api-untyped-ast": "^0.5.1",
-    "pareto-core-types": "^0.5.0"
+    "api-untyped-ast": "^0.6.0",
+    "pareto-core-types": "^0.6.0"
   },
-  "interface-fingerprint": "2f3f8d15409c7cbba089ffd41a1d19bef6438e1a",
-  "content-fingerprint": "af962bc1ac3d765374370ea22bd739fe8154c8e3"
+  "interface-fingerprint": "8f499a7370501239d1fcc397cc449a3b455691ff",
+  "content-fingerprint": "421c19e4da6ba3d4dcbf25ae6f8eefeb005bcc9e"
 }
